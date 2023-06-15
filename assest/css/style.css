@@ -1,0 +1,426 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+                                    /* this is head & nav */
+.head{
+    min-height: 100vh;
+
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/assest/images/banner1);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+     display: flex;
+    padding: 2% 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    width: 250px;
+}
+.nav-links{
+display: flex;
+text-align: center;
+}
+.nav-links ul{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px 13px;
+    position: relative;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:  white;
+    font-size: medium;
+
+
+    font-family:'Poppins', sans-serif;
+}
+.nav-links li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    transition: 0.5s;
+
+}
+.nav-links li:hover::after{
+    width: 100%;
+}
+.text{
+    position: relative;
+    top: 110px;
+    left: 25%;
+    display: inline-block;
+    text-align: center;
+    color:white;
+}
+.text h1{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.text p{
+    padding: 26px 0px;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}
+.text a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 9px 27px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+ .text a:hover{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 9px 27px;
+    position: relative;
+    background-color: orangered;
+    transition: 1s;
+    margin: auto;
+}
+                                    /* This is sports section */
+
+.sports{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 3%;
+} 
+.sports h1{
+    font-size:2.5em;
+    font-family: 'Poppins', sans-serif;
+}
+.sports h1::before{
+    content: '';
+    width: 0%;
+    background-color: black;
+    height: 2px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    transition: 1s;
+}
+.sports h1:hover::before{
+    width: 40%;
+}
+.p{
+    margin-top: 5px;
+    color: brown;
+    font-size: larger;
+    font-weight: bold;
+}
+.p::after{
+    content: '';
+    width: 40%;
+    background-color: black;
+    height: 2px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    transition: 1s;
+}
+.row{
+    display: flex;
+    margin: 3% 5%;
+    justify-content: space-between;
+}
+.sports-col
+{
+    width: 390px;
+    background-color: rgb(244, 218, 179);
+    margin-left: 15px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 30vh;
+    transition: 0.5s;
+    
+}
+.sports-col:hover{
+box-shadow:10px 8px 9px rgba(4,9,30,0.7);
+cursor: pointer;
+}
+.sports-col h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.sports-col p{
+    margin-top: 20px;
+    font-weight: 500;
+    color: black;
+}
+                                    /* This is campus section */
+.campus{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 7%;
+}
+.campus h1{
+    font-size:2.5em;
+    font-family: 'Poppins', sans-serif;
+}
+.campus h1::before{
+    content: '';
+    width: 0%;
+    background-color: black;
+    height: 2px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    transition: 1s;
+}
+.campus h1:hover::before{
+    width: 40%;
+}
+.campus p{
+    margin-top: 10px;
+    margin-top: 5px;
+    color: brown;
+    font-size: larger;
+    font-weight: bold;
+}
+.campus p::after{
+        content: '';
+        width: 40%;
+        background-color: black;
+        height: 2px;
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 10px;
+        transition: 1s;
+}
+.complex-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.complex-col img
+{
+    width: 100%;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.layer:hover{
+    background-color: rgba(226,0,0,0.5)
+}
+.layer h3{
+    margin-top: 10px;
+    font-size: 26px;
+    color: white  ;
+    font-weight:500;
+    transform: rotateX(-50%);
+    position:absolute;
+    left: 40%;
+    bottom: 5%;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.layer:hover h3{
+    opacity: 1.0;
+    bottom: 45%;
+    
+}
+                                    /*This is  Facility section */
+.facility{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 2%;
+}
+.facility h1{
+    font-size:2.5em;
+    font-family: 'Poppins', sans-serif;
+}
+.facility h1::before{
+    content: '';
+    width: 0%;
+    background-color: black;
+    height: 2px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    transition: 1s;
+}
+.facility h1:hover::before{
+    width: 40%;
+}
+.f-p{
+    margin-top: 10px;
+    margin-top: 5px;
+    color: brown;
+    font-size: larger;
+    font-weight: bold;
+}
+.f-p::after{
+        content: '';
+        width: 40%;
+        background-color: black;
+        height: 2px;
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 10px;
+        transition: 1s;
+}
+.facility-col{
+    flex-basis: 31%;
+    margin-bottom: 3%;
+    text-align: left;
+    border-radius: 10px;
+}
+.facility-col img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.facility-col h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-weight: bold;    
+}
+                                    /* This is Overview section */
+.overview{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 2%;
+}
+.overview h1{
+    font-size:2.5em;
+    font-family: 'Poppins', sans-serif;
+}
+.overview h1::before{
+    content: '';
+    width: 0%;
+    background-color: black;
+    height: 2px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    transition: 1s;
+}
+.overview h1:hover::before{
+    width: 40%;
+}
+.o-p{
+    margin-top: 10px;
+    margin-top: 5px;
+    color: brown;
+    font-size: larger;
+    font-weight: bold;
+}
+.o-p::after{
+        content: '';
+        width: 40%;
+        background-color: black;
+        height: 2px;
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 10px;
+        transition: 1s;
+}
+.overview-col{
+    flex-basis: 50%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    text-align: left;
+    padding: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.overview-col img{
+    border-radius: 30px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.overview p{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+}
+.overview h3{
+text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;    
+}
+                                    /* This is Call of action section */
+.cta{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/assest/images/2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    height: 50vh;
+    margin-bottom: 20px;
+}
+.cta h1{
+
+}
+.cta a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 9px 27px;
+    position: relative;
+    top: 60px;
+    left: 45%;
+    cursor: pointer;
+    transition: 1s;
+}
+ .cta a:hover{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 9px 27px;
+    position: relative;
+    background-color: orangered;
+    transition: 1s;
+    margin: auto;
+}
+.cta h1{
+    position: relative;
+    top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
